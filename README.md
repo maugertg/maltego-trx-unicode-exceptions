@@ -13,7 +13,7 @@ UnicodeEncodeError: 'charmap' codec can't encode character '/u2618' in position 
 ```
 
 # Cause
-The issue appears to be related to the way Python raeds the environment for the encoding. Most of the time it will default to UTF-8 but there are instances when launching the termina/cli/command prompt it will end up using Windows-1252 / cp1252.
+The issue appears to be related to the way Python gets the encoding from the environment. Most of the time it will default to UTF-8 but there are instances when launching the termina/cli/command prompt it will end up using Windows-1252 / cp1252.
 
 # Possible Solutions
 ## Set UTF-8 environment variable
